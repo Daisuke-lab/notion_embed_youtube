@@ -54,5 +54,4 @@ class VideoGetter():
 
 if __name__ == "__main__":
     video_getter = VideoGetter()
-    print(video_getter)
-    #video_getter.get_channels("mayuko inoue")
+    video_getter.get_channels("バイリンガール")
