@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-import datetime
 import requests
 import sys
 from datetime import datetime, timedelta, timezone
@@ -13,7 +12,7 @@ class NotionEmbeder():
         self.base_url = "https://api.notion.com"
         self.api_version = "v1"
         JST = timezone(timedelta(hours=+9), 'JST')
-        self.today = datetime.datetime.now(JST).strftime("%Y-%m-%d")
+        self.today = datetime.now(JST).strftime("%Y-%m-%d")
         self.headers = self.get_headers()
 
         
